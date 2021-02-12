@@ -1,0 +1,261 @@
+/************ GLOBAL ************/
+body,html {
+  height: 100%;
+  background-color: rgb(235, 232, 232);
+}
+
+.navbar{  
+  background-color: #ff70ff;
+  border-bottom: 1px solid rgba(73, 22, 58, 0.5);
+}
+
+.navbar-nav{
+  font-family: "freestyle_scriptregular";
+  font-size: 25pt;
+}
+
+.nav-item{
+  text-align: center;
+  min-width: 110px;
+}
+
+h2{
+  font-family: "freestyle_scriptregular";
+  font-size: 30pt;
+	color: #03b403;
+}
+
+h3{
+font-size: 16pt;
+font-family: 'playfair_displayregular';
+}
+
+h6{
+font-size: 14pt;
+font-family: 'playfair_displayregular';
+}
+
+p{
+  font-family: 'playfair_displayregular';
+font-size: 12pt;
+}
+
+ul{
+  font-family: 'playfair_displayregular';
+  list-style-type: none;
+  font-size: 12pt;
+}
+
+label{
+  font-family: 'playfair_displayregular';
+font-size: 12pt;
+}
+
+.footer{
+background-color: #ff70ff;
+border-top: 1px solid rgba(73, 22, 58, 0.5);
+color: rgba(73, 22, 58, 0.877);
+}
+
+.footer_title{
+  font-family: "freestyle_scriptregular";
+  color: rgba(73, 22, 58, 0.877);
+  font-size: 20pt;
+  letter-spacing: 0.3vw;
+}
+
+
+/************* HOME *************/
+
+#MainTitle {
+	font-family: "freestyle_scriptregular";
+	color: #FF70FF;
+	font-size: 60pt;
+  letter-spacing: 1.2vw;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.jumbotron{
+	background-image: url("images/brut/mainRoom_fd30.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 82.5%;
+}
+
+/************* CARD *************/
+
+.menu_image{
+height: 50%;
+width: 50%;
+}
+
+.appetizers{
+  height: 350px;
+  line-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appetizers, .courses, .dessert, h3, h6{
+line-height: 30px;
+}
+
+.imgCard{
+  display: flex;
+  align-items: center;
+}
+
+.courses{
+  height: 350px;
+  line-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dessert{
+height: 350px;
+line-height: 350px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/******* LOCATION *******/
+
+button {
+  background: transparent;
+  border: 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5),  0px 0px 0px 0px rgba(39, 200, 255, .5);
+  transition: all 0.2s;  
+}
+
+button:hover::after {
+  transform: rotate(150deg);
+}
+
+button:hover{
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+button::after{ /*pseudo élément after que l'on va faire pivoter*/
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+}
+
+
+/********** ACTIVITIES **********/
+.field-label{
+  font-size: 1.1vw;
+}
+
+.classes{
+  font-size: 1.3vw;
+  line-height: 2em;
+}
+/*********** OUR CHEF ***********/
+
+.chef{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************ FONTS ************/
+
+
+@font-face {
+  font-family: 'freestyle_scriptregular';
+  src: url('fonts/Freestyle_script_regular/freescpt-webfont.woff2') format('woff2'),
+       url('fonts/Freestyle_script_regular/freescpt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url('fonts/PlayfairDisplay/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+       url('fonts/PlayfairDisplay/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'playfair_displayitalic';
+  src: url('playfairdisplay-italic-variablefont_wght-webfont.woff2') format('woff2'),
+       url('playfairdisplay-italic-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@media screen and (max-device-width: 480px), screen and (orientation: portrait) {
+ 
+  #MainTitle{
+    font-size: 11vw;
+  }
+
+  .navabar{
+    font-size: 8vw ;
+  }
+
+  .nav-item{
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 7vw;
+  }
+
+  h3{
+    font-size: 16pt;
+  }
+
+  h6{
+    font-size: 14pt;
+  }
+
+  p{
+    font-size: 11pt;
+  }
+
+  ul, li{
+    font-size: 3vw;
+  }
+  
+  #imgCourses{
+    order: -1;
+  }
+
+  .footer{
+    font-size: 16pt;
+
+  }
+
+}
